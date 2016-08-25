@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title> Canvas Demo </title>
+<meta charset="utf-8">
+<style>
+canvas{
+  border : 1px solid black;
+ }
+ </style>
+ <script src="attempt.js"></script>
+ </head>
+ 
+ <body>
+ <canvas  width="600" height="200" id="can"> </canvas>
+ <form>
+ <p>
+ <label for="backgroundColor">Select background color</label>
+ <select id="backgroundColor">
+ <option value="white" selected="selected">white</option>
+ <option value="black">black</option>
+ </select>
+ </p>
+ 
+ <p>
+ <label for="shape">Circles or square?</label>
+ <select id="shape">
+ <option value="none" selected="selected">Neither</option>
+ <option value="circles">circle</option> 
+ <option value="squares">squares</option>
+ </select>
+ </p>
+ 
+ <p>
+ <label for="foregroundColor">Select text color</label>
+ <select id="foregroundColor">
+ <option value="black" selected="selected">black</option>
+ <option value="white">white</option>
+ </select>
+</p>
+
+<p>
+Enter some text : <input id= "display" type="text"> 
+</p>
+
+<p>
+<input type="button" id="preview" value="preview">
+</p>
+</form>
+ </body>
+ </html>
+ 
