@@ -1,0 +1,54 @@
+<html>
+<head>
+<title> Animation using Transition Feature </title>
+<style type="text/css">
+
+@-webkit-keyframes resize
+{ 
+0% { 
+	   height : 220 px;
+	   width : 220px;
+	   opacity : 0.7;
+	}
+  50% { 
+		height : 240 px;
+		width  : 240 px;
+		opacity :0.4;
+  
+  }
+}
+
+#heart:hover {
+	-webkit-animation-name : resize;
+	-webkit-animation-duration : 5s;
+	-webkit-animation-iteration-count : 5;
+	-webkit-animation-direction : alternate;
+	-webkit-animation-timing-function : cubic-bezier(0,0.5,0,0);
+}
+
+#heartconst {
+	-webkit-animation-name : resize;
+	-webkit-animation-duration : 2s;
+	-webkit-animation-iteration-count : infinite;
+	-webkit-animation-direction : alternate;
+	-webkit-animation-timing-function : cubic-bezier(0,0.5,0,0);
+	position : absolute;
+	left : 350px;
+	top : 70px;
+
+}
+
+Img{
+height : 200px;
+width : 200 px;
+opacity : 1;
+}
+
+</style>
+</head>
+<body>
+<h1> Working with Animation </h1>
+<img id="heart" src="heart.jpg">
+<img id="heartconst" src="heart.jpg">
+</body>
+</html>
