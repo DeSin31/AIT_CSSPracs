@@ -1,0 +1,87 @@
+<html>
+<head>
+<title> Responsive </title> 
+<style>
+body {
+    background-color:lightgreen;
+}
+
+img {
+    
+    width: 200px;
+    height: 200px;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color:grey;
+    }
+    img { 
+    width: 100px;
+    height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        background-color:blue;
+    }
+    img { 
+    width: 80px;
+    height: 80px; 
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color:red;
+    }
+    img { 
+    width: 70px;
+    height: 70px; 
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color:lightblue;
+    }
+    img { 
+    width: 50px;
+    height: 50px; 
+    }
+}
+@media only screen and (max-width: 400px) {
+    body {
+        background-color:yellow;
+    }
+    img { 
+    width: 40px;
+    height: 40px; 
+    }
+}
+</style>
+</head>
+<body>
+
+<h2>Demo Form </h2>
+<form name="demo" id="demo" method="post" action="#">
+<div>
+
+Name :<input type="text" name="name" id="name" placeholder="Name"> <br><br>
+E-mail :<input type="email" name="email" id="email" placeholder="Email"> <br><br>
+Telephone :<input type="tel" name="telephone" id="telephone" placeholder="Telephone(optional)"> <br><br>
+</div>
+
+<input type="checkbox" name="hobby" value="paint"> <img src="image.jpg" id="image" height="200" width="200">
+<input type="checkbox" name="hobby" value="photo"><img src="image1.jpg" id="image" height="200" width="200">
+<input type="checkbox" name="hobby" value="read"><img src="image2.jpg" id="image" height="200" width="200">
+
+<section id="buttons">
+<input type="reset" name="reset" id="resetbtn" value="reset">
+<input type="submit" name="submit" id="submitbtn" value="submit">
+</section>
+</form>
+</body>
+</html>
+
